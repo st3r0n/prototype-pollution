@@ -1,1 +1,22 @@
+++++++++++++++++DETECTION OF SERVER SIDE PROTO POLLUTION++++++++++++++++++++++++++++++++++++++++++++++++++++
+note--> for loop i JS iterates over all properties that means it will onclude everytjhing from objects own property to protytpe property
+now  for serverside prototype pollution we can look for anything that submits to the server and can we add __proto__ inside it wuth propertyname and  values
+examples being the following
+POST or PUT requests that submit JSON data to an application or API are prime candidates for this kind of behavior as it's common for servers to respond with a 
+JSON representation of the new or updated object.
+In this case, you could attempt to pollute the global Object.prototype with an arbitrary property as follows: 
 
+POST /user/update HTTP/1.1
+Host: vulnerable-website.com
+...
+{
+    "user":"wiener",                       and the server will return the property in response
+    "firstName":"Peter",
+    "lastName":"Wiener",
+    "__proto__":{
+        "foo":"bar"                      ------> so foo:bar will b included in response
+    }
+}
+look for PUT nad POst request being sent to server
+
+LAB1--->priv esc i=usng prototype pollution
