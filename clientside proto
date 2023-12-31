@@ -12,3 +12,10 @@ finding protoype pollution gadget
 
 manual is slightly hard so leave --> it is just interceptinf responce and adding debbuger to it such that it retutns stack trace and logs which can be helpful for us
 WE CAN MAKE USE OF DOM INAVDER FOR COMPLETE ATTACK
+usiing dom invader ios seasy justa enable it in burp browser and use it to exploit it
+
+no for manula exploitatioan we need following:
+find source by using __proto__.foo=bar or __proto__[foor]=bar in url or in json----->
+then use devtools and type Object.prototype in console to looke if we have any new property names as foo with value bar---->
+if it does look at sources tab or debugger tab in browser and see thre codes -----> it would have some gadget we can use
+make use of gadget and exploit it as needed
