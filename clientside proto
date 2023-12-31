@@ -1,0 +1,6 @@
+finding prototype pollution
+1. manually--->
+ vulnerable-website.com/?__proto__[foo]=bar 
+vulnerable-website.com/?__proto__.foo=bar
+tyr to add arbitrary property here URl is used also try in json
+once you do this in you browser console inspecct object.prototype.foo   ---> change property name here
