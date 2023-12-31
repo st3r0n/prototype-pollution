@@ -1,0 +1,2 @@
+the previous rce required us to trigger the event 
+but this one can be donw just by injecting the payload nothing is required ie no user interaction
