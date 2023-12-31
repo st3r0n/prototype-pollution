@@ -26,10 +26,14 @@ step 1--> cause an error and look at the code
 step 2 pollute the status code with your own code and status property
 step3 --> cause an error if our status code is reflected we have sussecfully detected prototpe pollution
  Remember that this must be between 400 and 599. 
+and u can cause 500 erro which may display status code
 
 II JSON spaces override -->
 in this technique we can set the value of indentation to specific value and see the response 
 if responce has indentation we set we can confirm that is is vulnerable          ---------> Although the prototype pollution has been fixed in Express 4.17.4
 remember to switch to raw tab 
 
-III
+III Charset override ------> left
+
+
+
