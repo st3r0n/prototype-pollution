@@ -21,6 +21,6 @@ Remote code execution via child_process.fork()
 if developer is using chil_process.fork() method we can use 
 "execArgv": [
     "--eval=require('<module>')"
-]
+]   ------> this is to be added in __proto__
 method which acceptsjavascript code that can be executed on ther server
 that cab be leveraged to condunct RCE
