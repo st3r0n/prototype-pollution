@@ -18,3 +18,9 @@ try to chhange proto to construcrtor if not works
 
 EXPLOITING METHOD 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Remote code execution via child_process.fork()
+if developer is using chil_process.fork() method we can use 
+"execArgv": [
+    "--eval=require('<module>')"
+]
+method which acceptsjavascript code that can be executed on ther server
+that cab be leveraged to condunct RCE
