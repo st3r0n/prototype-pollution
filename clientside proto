@@ -4,3 +4,11 @@ finding prototype pollution
 vulnerable-website.com/?__proto__.foo=bar
 tyr to add arbitrary property here URl is used also try in json
 once you do this in you browser console inspecct object.prototype.foo   ---> change property name here
+
+2.using DOM invader   ---> written at last
+
+finding protoype pollution gadget
+
+
+manual is slightly hard so leave --> it is just interceptinf responce and adding debbuger to it such that it retutns stack trace and logs which can be helpful for us
+WE CAN MAKE USE OF DOM INAVDER FOR COMPLETE ATTACK
