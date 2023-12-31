@@ -20,3 +20,15 @@ Host: vulnerable-website.com
 look for PUT nad POst request being sent to server
 
 2. what if we dont have something like previous scenario where our polluted property is not reflected:
+varios methods acan be used for that but only a selection of them s used here
+I.using status code override : here we will change the status code property such that when error occur our polluted code will be shown to us not the one that it reslly should
+step 1--> cause an error and look at the code
+step 2 pollute the status code with your own code and status property
+step3 --> cause an error if our status code is reflected we have sussecfully detected prototpe pollution
+
+
+II JSON spaces override -->
+in this technique we can set the value of indentation to specific value and see the response 
+if responce has indentation we set we can confirm that is is vulnerable
+
+III
