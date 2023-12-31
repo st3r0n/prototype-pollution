@@ -42,6 +42,8 @@ III Charset override ------> left
 3.scanning for server side sources--> we can make use of server side proto type scanner from bapp
 
 use constructor method if proto not working
+-disable-proto=delete or --disable-proto=throw respectively. However, this can also be bypassed by using the constructor technique
+
 
 
 
