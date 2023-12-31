@@ -25,7 +25,7 @@ I.using status code override : here we will change the status code property such
 step 1--> cause an error and look at the code
 step 2 pollute the status code with your own code and status property
 step3 --> cause an error if our status code is reflected we have sussecfully detected prototpe pollution
-
+ Remember that this must be between 400 and 599. 
 
 II JSON spaces override -->
 in this technique we can set the value of indentation to specific value and see the response 
