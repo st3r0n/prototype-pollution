@@ -32,3 +32,17 @@ If the object doesn't have a matching property, the JavaScript engine looks for 
 ![image1](https://portswigger.net/web-security/prototype-pollution/images/prototype-pollution-inheritance.svg)
 
 prototype chain
+
+Note that an object's prototype is just another object, which should also have its own prototype, and so on. 
+As virtually everything in JavaScript is an object under the hood, this chain ultimately leads back to the top-level Object.prototype, 
+whose prototype is simply null
+
+++++++++++++++ACCESSING PROTOTYPES+++++++++++++++++++++
+use __proto__  ---> to access its prototype
+
+we can chain multiple __proto__ to access root proto
+eg --> username.__proto__                        // String.prototype
+username.__proto__.__proto__              // Object.prototype
+username.__proto__.__proto__.__proto__    // null
+
+
