@@ -29,6 +29,7 @@ step3 --> cause an error if our status code is reflected we have sussecfully det
 
 II JSON spaces override -->
 in this technique we can set the value of indentation to specific value and see the response 
-if responce has indentation we set we can confirm that is is vulnerable
+if responce has indentation we set we can confirm that is is vulnerable          ---------> Although the prototype pollution has been fixed in Express 4.17.4
+remember to switch to raw tab 
 
 III
