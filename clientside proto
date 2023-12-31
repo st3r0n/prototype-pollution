@@ -31,3 +31,6 @@ sometimes the validation may be flawed we can check that from sources or debugge
 /?constconstructorructor[protoprototypetype][foo]=bar
 /?constconstructorructor.protoprototypetype.foo=bar
 
+++++++++++++++++++++prototype pollution in ecternal linbraries++++++++++++++++++++++++++++++++++++
+we require Dom invader fro that 
+use dom invader to discover third party modules and then craft payload ----> like in this lab we got to kne abut hitcallback now se can create hit callback to fetch cookie 
