@@ -32,8 +32,17 @@ II JSON spaces override -->
 in this technique we can set the value of indentation to specific value and see the response 
 if responce has indentation we set we can confirm that is is vulnerable          ---------> Although the prototype pollution has been fixed in Express 4.17.4
 remember to switch to raw tab 
+"__proto__": {
+    "json spaces":10
+}     something like this would be the request
 
 III Charset override ------> left
+
+
+3.scanning for server side sources--> we can make use of server side proto type scanner from bapp
+
+use constructor method if proto not working
+
 
 
 
