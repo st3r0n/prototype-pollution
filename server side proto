@@ -19,4 +19,4 @@ Host: vulnerable-website.com
 }
 look for PUT nad POst request being sent to server
 
-LAB1--->priv esc i=usng prototype pollution
+2. what if we dont have something like previous scenario where our polluted property is not reflected:
