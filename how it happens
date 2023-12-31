@@ -1,0 +1,11 @@
+this ca happen when javascript merges user data in property of any prototype 
+which measn we can set the propperty
+eg using  It's possible to pollute any prototype object, but this most commonly occurs with the built-in global Object.prototype. 
+ ****************************++++++++++requirements for prototype pollutions++++++++++++---------------*******///////////////////
+  1.
+
+   1. A prototype pollution source - This is any input that enables you to poison prototype objects with arbitrary properties.
+   2. sink - In other words, a JavaScript function or DOM element that enables arbitrary code execution
+   3. An exploitable gadget - This is any property that is passed into a sink without proper filtering or sanitization.    ----> code which we can insert
+
+
