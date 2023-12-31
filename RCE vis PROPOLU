@@ -1,1 +1,8 @@
+client side protoype pollution can only lead to DOM xss
+wherea as server side hash capability to cause RCE
 
+how to find if we can cause an RCE to webapp running RCE
+There are a number of potential command execution sinks in Node, many of which occur in the child_process module
+
+best way to identify these requests is by polluting the prototype with a payload that triggers 
+an interaction with Burp Collaborator when called.
