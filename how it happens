@@ -8,4 +8,34 @@ eg using  It's possible to pollute any prototype object, but this most commonly 
    2. sink - In other words, a JavaScript function or DOM element that enables arbitrary code execution
    3. An exploitable gadget - This is any property that is passed into a sink without proper filtering or sanitization.    ----> code which we can insert
 
+SOURCE OF PROTOTYPE:--->
+URL
+JSON
+WEB messages
+or any inout param
+
+
+SINK
+wherer our code is going so we can use DOM invader for that
+
+GADGET--->
+anuy property in prototype that can be used to give RCE if any property is defined explicitly in object then it have higher precedence
+
+
+EXAMPLES OF PROTOTYPE POLLUTIONS
+1.USIng URL 
+https://vulnerable-website.com/?__proto__[evilProperty]=payload-----> what happens here:
+__proto_ will fetch object.property so object.property will add evilproperty with payload as value
+now attacker can use that payload to get RCE
+
+2. using jSon:
+{
+    "__proto__": {
+        "evilProperty": "payload"
+    }
+}
+
+https://vulnerable-website.com/?__proto__[transport_url]=data:,alert(1);//    ----> this can be used for xss
+suppose in a website we can set transport url porperty that accepts url then either we can use out controlled server or data: URl to trigger xss
+
 
