@@ -26,3 +26,8 @@ getPrototypeOf()   ---. return prototype
 
 in simple words protoype is just a template for any onject that has that same data type which contains 
 predefined codes and methods which can be inherited and used by objects taht inherit them
+Whenever you reference a property of an object, the JavaScript engine first tries to access this directly on the object itself. 
+If the object doesn't have a matching property, the JavaScript engine looks for it on the object's prototype instead. 
+![image1](https://portswigger.net/web-security/prototype-pollution/images/prototype-pollution-inheritance.svg)
+
+prototype chain
